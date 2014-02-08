@@ -4,8 +4,10 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- fullscreen -->
-
-<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css"> <!-- css - file paling asas utk interface, javascript - otak -->
+		<link rel="stylesheet" href="css/uma.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.min.css" />
+		
 <script src="js/jquery.min.js"></script> <!--keperluan utk jquery mobile -->
 <script src="js/jquery.mobile.min.js"></script>
 
@@ -74,9 +76,7 @@
 		<li>Hasilkan panel lukisan yang mengandungi posisi karektor, props dan latarbelakang.</li>
 		<li>Cetak hasil kerja</li>
     </ul>
-		
-		
-		
+	
    <div class = "ui-grid-a ui-responsive" >
 		<div class = "ui-block-a">
 			<img src = "images/storyboard.jpg" width ="250" />
@@ -125,7 +125,35 @@
     </ul>
 	</div>
 	<div role="main" class="ui-content">
-		<!--<h3>Page 3</h3><p>Ini Isi </p> -->
+	
+	<!-- nak tambah pop up dlm bentuk btn -->
+	<div data-role = "popup" id = "d1">
+		<a href = "Tel: +60122271291" class = "ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-notext ui-corner-all">Telefon</a>
+		<a href = "SMS/Whatsapp://+60122271291" class = "ui-btn ui-btn-inline ui-icon-comment ui-btn-icon-notext ui-corner-all">SMS/Whatsapp</a>
+		<a href = "mailto:uma_leogal@yahoo.com" class = "ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-notext ui-corner-all">E-mail</a>
+	</div>
+	
+
+	
+	<!-- Senaraikan Authors -->
+		<h3>Authors</h3>
+		<ul data-role = "listview" data-inset = "true">
+			<li>
+			<a href = "#d1" data-rel = "popup" data-transition= "slideup"</a>
+			<img src = "images/uma.jpg" width = "150"/>
+			<h3>Umawathy Techanamurthy</h3>
+			<p>Kolej Komuniti Selayang </p>
+			<h3>Lokasi KKSY</h3>
+			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=kolej+komuniti+selayang&amp;sll=37.0625,-95.677068&amp;sspn=42.174768,79.013672&amp;ie=UTF8&amp;hq=kolej+komuniti+selayang&amp;ll=3.259335,101.661&amp;spn=0.006513,0.009645&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=7466473615742169189&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=kolej+komuniti+selayang&amp;sll=37.0625,-95.677068&amp;sspn=42.174768,79.013672&amp;ie=UTF8&amp;hq=kolej+komuniti+selayang&amp;ll=3.259335,101.661&amp;spn=0.006513,0.009645&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=7466473615742169189" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+			</li>
+		
+			<li>
+			<img src = "images/shreya.jpg" width = "150"/>
+			<h3>Baby Shreya</h3>
+			<p>Kolej Komuniti Selayang </p>
+			
+			</li>
+		</ul>
 	</div>
 	<div data-role="footer" data-position = "fixed">
 		<div data-role="navbar">
